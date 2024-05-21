@@ -6,7 +6,7 @@ app.get('/', (req, res) => {
   res.send('Hello World!');
 });
 
-// Start of /docs route
+// Adding /docs route
 app.get('/docs', (req, res) => {
   res.send(`
     <h1>Project Documentation</h1>
@@ -18,12 +18,11 @@ app.get('/docs', (req, res) => {
     <h2>File Structure</h2>
     <pre>
       hello-world-node-app/
-        
-        .gitignore
-        README.md
-        index.js
-        package.json
-        package-lock.json
+        ├── .gitignore
+        ├── README.md
+        ├── index.js
+        ├── package.json
+        ├── package-lock.json
     </pre>
     <h2>Dependencies</h2>
     <p>The project uses the following dependencies:</p>
